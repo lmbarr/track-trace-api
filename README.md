@@ -20,7 +20,7 @@ What things you need to install the software and how to install them
 Clone the project from GitHub
 
 ```
-git clone https://github.com/username/track-and-trace-api
+git clone https://github.com/lmbarr/track-and-trace-api
 ```
 
 Change into the project directory
@@ -41,14 +41,14 @@ Set up the Redis Server
 ```commandline
 redis-server 
 ```
-
-Set up the API Server
+Edit redis connection to `localhost`.
+Set up the API Server. Inside your virtual environments run:
 ```commandline
-python main.py
+python main.py localhost
 ```
 
 ### Running the API with Docker (Optional)
-
+Clone the repo from github and place a `.env` (request it to me) file in the repository folder.
 #### Build and run needed containers
 
 ```commandline
